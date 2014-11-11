@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="24D-h6-EYZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stop Watch-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StopWatchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syg-e1-RmU">
+                                <rect key="frame" x="284" y="340" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMU-Be-4Jf">
+                                <rect key="frame" x="171" y="340" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-r1-kz6">
+                                <rect key="frame" x="397" y="340" width="40" height="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irM-ha-2E3">
+                                <rect key="frame" x="239" y="201" width="122" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dRc-r1-kz6" firstAttribute="top" secondItem="syg-e1-RmU" secondAttribute="top" id="5bN-Al-LdR"/>
+                            <constraint firstAttribute="centerX" secondItem="syg-e1-RmU" secondAttribute="centerX" id="HEE-vy-8HZ"/>
+                            <constraint firstAttribute="centerY" secondItem="irM-ha-2E3" secondAttribute="centerY" constant="80" id="Jgi-go-QZJ"/>
+                            <constraint firstItem="dRc-r1-kz6" firstAttribute="leading" secondItem="syg-e1-RmU" secondAttribute="trailing" constant="80" id="QCV-zz-vx0"/>
+                            <constraint firstItem="syg-e1-RmU" firstAttribute="leading" secondItem="oMU-Be-4Jf" secondAttribute="trailing" constant="80" id="S9J-5R-Otf"/>
+                            <constraint firstAttribute="centerX" secondItem="irM-ha-2E3" secondAttribute="centerX" id="UXp-RH-WxV"/>
+                            <constraint firstItem="dRc-r1-kz6" firstAttribute="top" secondItem="oMU-Be-4Jf" secondAttribute="top" id="Zef-Mx-Sls"/>
+                            <constraint firstItem="syg-e1-RmU" firstAttribute="top" secondItem="irM-ha-2E3" secondAttribute="bottom" constant="100" id="gUH-rc-3TD"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Stop Watch" image="stopwatch-32.png" id="eHm-Ob-F1c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1195" y="657"/>
+        </scene>
+        <!--DITabbarController-->
+        <scene sceneID="0UU-oP-c5e">
+            <objects>
+                <tabBarController title="DITabbarController" automaticallyAdjustsScrollViewInsets="NO" id="24D-h6-EYZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="NfN-uK-5ba">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="OGb-sq-23U"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oD5-iP-TgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383" y="657"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stopwatch-32.png" width="32" height="32"/>
+    </resources>
 </document>

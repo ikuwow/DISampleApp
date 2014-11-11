@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7DBD6E761A123B5D00245738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD6E751A123B5D00245738 /* AppDelegate.swift */; };
-		7DBD6E781A123B5D00245738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD6E771A123B5D00245738 /* ViewController.swift */; };
+		7DBD6E781A123B5D00245738 /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD6E771A123B5D00245738 /* StopWatchViewController.swift */; };
 		7DBD6E7B1A123B5D00245738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD6E791A123B5D00245738 /* Main.storyboard */; };
 		7DBD6E7D1A123B5D00245738 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD6E7C1A123B5D00245738 /* Images.xcassets */; };
 		7DBD6E801A123B5D00245738 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD6E7E1A123B5D00245738 /* LaunchScreen.xib */; };
 		7DBD6E8C1A123B5D00245738 /* DISampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD6E8B1A123B5D00245738 /* DISampleAppTests.swift */; };
+		7DBD6E961A1244C100245738 /* stopwatch-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD6E951A1244C100245738 /* stopwatch-50.png */; };
+		7DBD6E981A12466A00245738 /* DITabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD6E971A12466A00245738 /* DITabbarController.swift */; };
+		7DBD6E9A1A12473400245738 /* stopwatch-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD6E991A12473400245738 /* stopwatch-32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		7DBD6E701A123B5D00245738 /* DISampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DISampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBD6E741A123B5D00245738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DBD6E751A123B5D00245738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DBD6E771A123B5D00245738 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DBD6E771A123B5D00245738 /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		7DBD6E7A1A123B5D00245738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DBD6E7C1A123B5D00245738 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7DBD6E7F1A123B5D00245738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7DBD6E851A123B5D00245738 /* DISampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DISampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBD6E8A1A123B5D00245738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DBD6E8B1A123B5D00245738 /* DISampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DISampleAppTests.swift; sourceTree = "<group>"; };
+		7DBD6E951A1244C100245738 /* stopwatch-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stopwatch-50.png"; sourceTree = "<group>"; };
+		7DBD6E971A12466A00245738 /* DITabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DITabbarController.swift; sourceTree = "<group>"; };
+		7DBD6E991A12473400245738 /* stopwatch-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stopwatch-32.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				7DBD6E751A123B5D00245738 /* AppDelegate.swift */,
-				7DBD6E771A123B5D00245738 /* ViewController.swift */,
+				7DBD6E771A123B5D00245738 /* StopWatchViewController.swift */,
+				7DBD6E971A12466A00245738 /* DITabbarController.swift */,
 				7DBD6E791A123B5D00245738 /* Main.storyboard */,
 				7DBD6E7C1A123B5D00245738 /* Images.xcassets */,
 				7DBD6E7E1A123B5D00245738 /* LaunchScreen.xib */,
@@ -90,6 +97,8 @@
 		7DBD6E731A123B5D00245738 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7DBD6E951A1244C100245738 /* stopwatch-50.png */,
+				7DBD6E991A12473400245738 /* stopwatch-32.png */,
 				7DBD6E741A123B5D00245738 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,7 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DBD6E7B1A123B5D00245738 /* Main.storyboard in Resources */,
+				7DBD6E9A1A12473400245738 /* stopwatch-32.png in Resources */,
 				7DBD6E801A123B5D00245738 /* LaunchScreen.xib in Resources */,
+				7DBD6E961A1244C100245738 /* stopwatch-50.png in Resources */,
 				7DBD6E7D1A123B5D00245738 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD6E781A123B5D00245738 /* ViewController.swift in Sources */,
+				7DBD6E981A12466A00245738 /* DITabbarController.swift in Sources */,
+				7DBD6E781A123B5D00245738 /* StopWatchViewController.swift in Sources */,
 				7DBD6E761A123B5D00245738 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
